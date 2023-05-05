@@ -2,6 +2,7 @@
   "name": "reacttester",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://amandeep-pawar.github.io",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.3.0",
     "@srexi/purecounterjs": "^1.5.0",
@@ -11,6 +12,7 @@
     "aos": "^3.0.0-beta.6",
     "compress-create-react-app": "^1.4.1",
     "express": "^4.18.2",
+    "gh-pages": "^5.0.0",
     "nodemon": "^2.0.20",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -18,6 +20,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
